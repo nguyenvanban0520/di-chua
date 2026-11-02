@@ -9,7 +9,8 @@
 class TempleParticleEngine {
   constructor(canvas) {
     this.canvas = canvas;
-    this.ctx = canvas.getContext('2d', { alpha: true, desynchronized: true });
+    // Keep transparent effects composited with the temple background on Chrome/Windows.
+    this.ctx = canvas.getContext('2d', { alpha: true });
     this.width = 1080;
     this.height = 1920;
     this.canvas.width = this.width;

@@ -33,7 +33,7 @@
     audio.ensureContext();
     const btnUnlock = document.getElementById('btnUnlockAudio');
     if (btnUnlock) {
-      btnUnlock.textContent = '✅ Âm Thanh Chùa Đã Sẵn Sàng';
+      btnUnlock.textContent = '✅ Âm Thanh Chùa Thiên Phúc Đã Sẵn Sàng';
       btnUnlock.classList.remove('gold');
       btnUnlock.classList.add('active-toggle');
     }
@@ -404,8 +404,8 @@
     } else {
       liveDot.classList.remove('connected');
       liveText.textContent = st.settings?.autoSim
-        ? 'CHÙA LINH ỨNG • TỰ ĐỘNG GIẢ LẬP ĐÔNG NGƯỜI'
-        : 'CHÙA LINH ỨNG • ĐỨC PHẬT A DI ĐÀ';
+        ? 'CHÙA THIÊN PHÚC • TỰ ĐỘNG GIẢ LẬP ĐÔNG NGƯỜI'
+        : 'CHÙA THIÊN PHÚC • ĐỨC PHẬT A DI ĐÀ';
     }
 
     const btnAutoSim = document.getElementById('btnToggleAutoSim');
